@@ -1,6 +1,6 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { HomeScreen } from "../screens/Home/HomeScreen";
-import { DetailsScreen } from "../screens/Details/DetailsScreen";
+import HomeScreen from "../screens/Home/HomeScreen";
+import DetailsScreen from "../screens/Details/DetailsScreen";
 
 export type RootStackParams = {
   Home: undefined;
@@ -9,7 +9,7 @@ export type RootStackParams = {
 
 const Stack = createNativeStackNavigator<RootStackParams>();
 
-export const Navigation = () => {
+const Navigation = () => {
   return (
     <Stack.Navigator
       initialRouteName="Home"
@@ -20,3 +20,5 @@ export const Navigation = () => {
     </Stack.Navigator>
   );
 };
+
+export default Navigation;

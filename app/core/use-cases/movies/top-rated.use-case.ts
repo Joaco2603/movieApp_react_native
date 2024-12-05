@@ -1,6 +1,6 @@
-import { HttpAdapter } from "@/app/config/adapters/http/http.adapter";
+import HttpAdapter from "@/app/config/adapters/http/http.adapter";
 import { TopRatedResponse } from "@/app/infrastructure/interfaces/movie-db.responses";
-import { MovieMapper } from "@/app/infrastructure/mappers/movie.mapper";
+import MovieMapper from "@/app/infrastructure/mappers/movie.mapper";
 import type { Movie } from "../../entities/movie.entity";
 
 export const moviesTopRatedUseCase = async (fetcher: HttpAdapter): Promise<Movie[]> => {

@@ -1,5 +1,5 @@
 import { NavigationContainer } from "@react-navigation/native";
-import { Navigation } from "./presentation/navigation/Navigation";
+import Navigation from "./presentation/navigation/Navigation";
 
 export default function Index() {
   return (

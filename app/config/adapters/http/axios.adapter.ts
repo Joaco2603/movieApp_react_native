@@ -1,5 +1,5 @@
 import axios, { AxiosInstance } from "axios";
-import { HttpAdapter } from "./http.adapter";
+import HttpAdapter from "./http.adapter";
 
 interface Options {
     baseUrl: string;
@@ -7,7 +7,7 @@ interface Options {
 }
 
 
-export class AxiosAdapter implements HttpAdapter {
+class AxiosAdapter implements HttpAdapter {
     private axiosInstace: AxiosInstance;
 
     constructor(options: Options) {
@@ -27,3 +27,5 @@ export class AxiosAdapter implements HttpAdapter {
         }
     }
 }
+
+export default AxiosAdapter;
